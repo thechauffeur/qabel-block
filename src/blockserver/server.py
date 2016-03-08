@@ -69,7 +69,7 @@ class FileHandler(RequestHandler, DatabaseMixin):
     def initialize(self, transfer_cls, get_auth_cls, get_cache_cls, database_pool,
                    concurrent_transfers: int=10):
         """
-        :param get_cache_class: A funciton that returns a Cache class
+        :param get_cache_cls: A funciton that returns a Cache class
         :param get_auth_cls: A function that returns a callback used for authorization
         :param database_pool: Postgresql database pool
         :param transfer_cls: A function that returns a Transfer class
